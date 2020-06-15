@@ -35,14 +35,17 @@
         
     </nav>
     <header class="jumbotron">
-        <div class="container">
-            <div class="row row-header">
+        <div class="container" >
+            <div class="row row-header" id="section1">
                 <div class="col-12 col-sm-6">
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="col-12 col-sm align-self-center">
+                <div class="col-12 col-sm-3 align-self-center">
                     <img src="img/logo.png" class="img-fluid">
+                </div>
+                <div class="col-12 col-sm-3 align-self-center">
+                    <a href="#section2" style="text-decoration: none;"><button type="button" class="btn btn-warning btn-sm btn-block">Reserve Table</button></a>
                 </div>
             </div>
         </div>
@@ -70,8 +73,12 @@
                 <h3>This Month's Promotions</h3>
             </div>
             <div class="col col-sm col-md">
-                <h2>Weekend Grand Buffet</h2>
-                <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                <div class="media">
+                    <div class="media-body">
+                        <h2 class="mt-0">Weekend Grand Buffet <span class="badge badge-danger">NEW</span></h2>
+                        <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                    </div>
+                    <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/buffet.png" alt="buffet">
             </div>
         </div>
 
@@ -86,6 +93,49 @@
                         <h2 class="mt-0">Alberto Somayya</h2>
                         <h4>Executive Chef</h4>
                         <p>Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row row-content" id="section2">
+            <div class="col-12 offset-1" >
+                    <div class="card" >
+                    <h3 class="card-header bg-warning text-white">Reserve a Table</h3>
+                    <div class="card-body">
+                        <dl class="row">
+                            <div class="col-sm-3">
+                                <dt>Number of Guests</dt>
+                            </div>
+                            <div class="col-sm">
+                                <dd><input type="radio" name="1"> 1 <input type="radio" name="2"> 2 <input type="radio" name="3"> 3 <input type="radio" name="4"> 4 <input type="radio" name="5"> 5 <input type="radio" name="6"> 6 </dd>
+                            </div>
+                        </dl>
+                        <dl class="row">
+                            <div class="col-sm-3">
+                                <dt>Date and Time</dt>
+                            </div>
+                            <div class="col-sm">
+                                <dd>
+                                    <form>
+                                        <div class="form-group row">
+                                            <div class="col-sm-6">
+                                                <input type="text" claass="form-control" id="Date" name="Date" placeholder="Date">
+                                            </div>
+                                        
+                                            <div class="col-sm">
+                                                <input type="text" claass="form-control" id="Time" name="Time" placeholder="Time">
+                                            </div>
+                                        </div>
+                                    </form>
+                                </dd>
+                            </div>
+                        </dl>
+                           
+                            <div class="col-12 col-sm-3 offset-3">
+                                <a href="#section1" style="text-decoration: none;"><button type="button" class="btn btn-primary">Reserve</button></a>
+                            </div>
+                        </dl>
                     </div>
                 </div>
             </div>
